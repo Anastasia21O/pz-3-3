@@ -2,7 +2,7 @@
 > In this lesson students should create template for app with webpack module builder
 
 ### Acceptance criteria 
-* Create two different configuration for production and develotion enviroment
+* Create two different webpack configuration for production and development environment
 
 
 
