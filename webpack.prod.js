@@ -8,7 +8,6 @@ const webpack = require("webpack");
 module.exports = merge(common, {
   mode: "production",
   plugins: [
-    new TerserPlugin(),
     new HtmlWebpackPlugin({
       template: './app/index.html'
     }),
@@ -20,7 +19,6 @@ module.exports = merge(common, {
     minimize: true,
     minimizer: [new TerserPlugin({
       parallel: true,
-      cache: true,
       extractComments: true,
       terserOptions: {
         ecma: 5,
